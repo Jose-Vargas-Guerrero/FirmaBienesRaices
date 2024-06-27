@@ -14,8 +14,8 @@
     right: 0;
     height: 100vh;
     width: 100vw;
-    background-color: black;
     color: white;
+    background-color: #000000;
     padding: 15px 30px;
     font-size: 1.8rem;
     animation: fadeIn 0.3s;
@@ -79,6 +79,8 @@
   .icon-menu{
     position: fixed;
     right: 2rem;
+    top: 2.2rem;
+
   }
 
   @media only screen and (min-width: 1024px){
