@@ -1,0 +1,89 @@
+---
+import {Image} from 'astro:assets'
+import confiabilidad from '../../../images/confiabilidadImage.jpg'
+
+---
+
+<div class="nosotrosContainer">
+    <div>
+        <Image class='image' src={confiabilidad} alt='lalal'/>
+    </div>
+    <div class="nosotrosText">
+        <h2>
+            Confiabilidad
+        </h2>
+        <p>
+            As an official Webflow partner agency our team can help you take your online presence to the next level.No matter what stage your business is at, whether you're a start-up or an established brand we can help you position yourself and grow.
+            help you take your online presence to the next level.  No matter what stage your business is at, whether you're a start-up or an established brand we can help you position yourself and grow.
+        </p>
+        <a href="#">
+            Ver inmuebles
+        </a>
+    </div>
+
+</div>
+
+
+
+<style>
+
+    .nosotrosContainer{
+        margin-top: 100px;
+        max-width: 100vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .image{
+        width: 700px;
+        height: 450px;
+        border-radius: 30px;
+    }
+
+
+    .nosotrosText{
+        margin-left: 50px;
+        width: 470px;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+
+    .nosotrosText >h2{
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .nosotrosText > p{
+        text-align: justify;
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .nosotrosText > a{
+        text-decoration: none;
+        background-color: #003ADB;
+        color: white;
+        font-size: 1.2rem;
+        padding: 12px 30px;
+        width: auto;
+        transition: 0.2s ease-in;
+    }
+
+    .nosotrosText > a:hover{
+        color: #000000;
+        background-color: transparent;
+        outline: solid 1px #003ADB;
+    }
+
+
+
+</style>

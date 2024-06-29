@@ -1,0 +1,58 @@
+---
+
+---
+
+<div class="main">
+    <video autoplay muted loop id="background-video">
+        <source src="/src/images/heroVideo.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <div class="hero">
+        <h1>Firma Bienes</h1>
+        <h1>Raíces</h1>
+    </div>
+</div>
+
+
+<style>
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 4rem;   
+}
+
+</style>

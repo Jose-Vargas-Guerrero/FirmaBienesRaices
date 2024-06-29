@@ -1,37 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/astrocomponets/HeroSection.astro";
+import SobreNosotros from "../components/astrocomponets/SobreNosotros.astro";
+import Footer from '../components/astrocomponets/Footer.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<div class="navbar">
-			alal
-		</div>
-		<h1>firma bienes raices</h1>
-		<h2>firma bienes raices </h2>
-	</main>
+  <main>
+    <HeroSection />
+    <SobreNosotros />
+    <Footer/>
+  </main>
 </Layout>
 
 <style>
 
+  main{
+    padding: 0;
+    margin: 0;
+  }
 
-h1{
-	font-family: "Noto Serif", serif;
-	
-}
-
-h2{
-	font-family: "Inter", sans-serif;
-}
-
-
-.navbar{
-	background-color: lightcoral;
-	max-widthh: 100vw;
-	height: 90px;
-	margin: 0 !important;
-	padding: 0;
-}
-
-	
+  /* font-family: "Inter", sans-serif; */
 </style>
