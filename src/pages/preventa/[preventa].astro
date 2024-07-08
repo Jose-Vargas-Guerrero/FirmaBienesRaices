@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import inmuebles from '../../data/inmuebles'
+
+export async function getStaticPaths () {
+    const inmueble = inmuebles
+
+    return inmueble.map((p) => {
+        return {
+            params: { preventa: p.url},
+            props: { p }
+        }
+    })
+}
+
+const {preventa} = Astro.params
+const { p } = Astro.props
+
+---
+
+
+<Layout title={preventa}>
+    <div>
+        <img src={p.imagen}/>
+        <h1>{p.nombre}</h1>
+    </div>
+</Layout>
+
