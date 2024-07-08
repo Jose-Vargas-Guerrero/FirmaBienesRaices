@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import inmuebles from "../../data/inmuebles";
+import Banner from "../../components/astrocomponets/listaInmuebles/Banner.astro";
+import Preview from "../../components/astrocomponets/listaInmuebles/Preview.astro";
+---
+
+<Layout title="venta">
+  <main>
+    <Banner categoria="Venta" />
+    <div class="body">
+      {
+        inmuebles.map((e) => (
+          <Preview
+            categoria="venta"
+            enlace={e.url}
+            codigo={e.codigo}
+            nombre={e.nombre}
+            medidas={e.medidas}
+            habitaciones={e.habitaciones}
+            estacionamiento={e.estacionamiento}
+            precio={e.precio}
+            disponible={e.disponible}
+            imagen={e.imagen}
+          />
+        ))
+      }
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 100vw;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .body {
+    max-width: 100vw;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+</style>

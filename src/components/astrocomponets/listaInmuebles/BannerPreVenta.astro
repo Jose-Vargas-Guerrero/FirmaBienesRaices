@@ -1,0 +1,77 @@
+---
+
+
+const { categoria } = Astro.props;
+---
+
+
+
+    <section>
+        <div class="banner">
+            <div class="filter">
+                <h3>En { categoria }</h3>
+                <div class="box">
+                <div class="line"></div>
+                <h2>Lista Destacada</h2>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+<style>
+    section{
+        padding-top: 80px;
+    }
+
+    .banner{
+        height: 250px;
+        width: 100vw;
+        background-image: url("../../../images/bannerPreventa.jpg");  
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .filter{
+        padding: 0 3rem;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-end
+    }
+
+    .banner h3 {
+        color: #ffffff;
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+        font-weight: lighter;
+    }
+
+    .banner h2 {
+        color: #ffffff;
+        font-size: 3.3rem;
+        font-weight: normal;
+    }
+
+    .line{
+        height: 1px;
+        width: 80px;
+        margin-right: 10px;
+        background-color: #ffffff;
+    }
+
+    .box{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    
+</style>

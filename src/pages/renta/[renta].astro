@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import inmuebles from '../../data/inmuebles'
+
+export async function getStaticPaths(){
+    const inmueble = inmuebles
+
+    return inmueble.map((p) => {
+        return{
+            params: {renta: p.url},
+            props: {p}
+        }
+    })
+}
+
+
+const { renta } = Astro.params
+const { p } = Astro.props
+---
+
+<Layout title={renta}>
+    <div>
+        <img src={p.imagen}/>
+        <h1>{p.nombre}</h1>
+    </div>
+    </Layout>
+    
+    
+    
+    <style>
+    
+    </style>
