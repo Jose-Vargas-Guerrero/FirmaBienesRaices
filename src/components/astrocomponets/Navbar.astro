@@ -5,15 +5,15 @@ import Menu from '../reactComponents/Menu'
 ---
 
 <div class="navbar">
-  <Image class="logo" src={logo} alt="Logo" />
+  <a href="/"><Image class="logo" src={logo} alt="Logo" /></a>
   <ul>
     <li><a>Nosotros</a></li>
     <li class="dropdown">
       <a>Inmuebles</a>
       <div class="dropdown-content">
-        <a>Venta</a>
-        <a>Renta</a>
-        <a>Preventa</a>
+        <a href="/venta">Venta</a>
+        <a href="/renta">Renta</a>
+        <a href="/preventa">Preventa</a>
       </div>
     </li>
     <li><a>Contacto</a></li>
