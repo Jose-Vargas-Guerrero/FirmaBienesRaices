@@ -1,32 +1,44 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import inmuebles from '../../data/inmuebles'
+import Layout from "../../layouts/Layout.astro";
+import inmuebles from "../../data/inmuebles";
+import View from "../../components/reactComponents/View";
+import Formulario2 from "../../components/astrocomponets/listaInmuebles/Formulario2.astro";
 
-export async function getStaticPaths(){
-    const inmueble = inmuebles
+export async function getStaticPaths() {
+  const inmueble = inmuebles;
 
-    return inmueble.map((p) => {
-        return{
-            params: {renta: p.url},
-            props: {p}
-        }
-    })
+  return inmueble.map((p) => {
+    return {
+      params: { renta: p.url },
+      props: { p },
+    };
+  });
 }
 
-
-const { renta } = Astro.params
-const { p } = Astro.props
+const { renta } = Astro.params;
+const { p } = Astro.props;
 ---
 
 <Layout title={renta}>
-    <div>
-        <img src={p.imagen}/>
-        <h1>{p.nombre}</h1>
-    </div>
-    </Layout>
-    
-    
-    
-    <style>
-    
-    </style>
+  <div>
+    <View
+      client:load
+      nombre={p.nombre}
+      medidas={p.medidas}
+      habitacion={p.habitaciones}
+      estacionamiento={p.estacionamiento}
+      precio={p.precio}
+      categoria={p.categoria}
+      descripcion={p.descripcion}
+      direccion={p.direccion}
+      image1={p.imagen}
+      image2={p.imagen2}
+      image3={p.imagen3}
+      image4={p.imagen4}
+      image5={p.imagen5}
+    />
+    <Formulario2 />
+  </div>
+</Layout>
+
+<style></style>
