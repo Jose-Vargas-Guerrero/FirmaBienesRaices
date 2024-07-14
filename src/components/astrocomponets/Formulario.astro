@@ -17,25 +17,26 @@ import { SiGooglemaps } from "react-icons/si";
   </div>
   <div class="info-container">
     <div class="contact-info">
-      <MdOutlinePhone />
+      <MdOutlinePhone className="icon"/>
       <div class="info-box">
         <strong>Telefono</strong>
-        <p>+1 252-937-3762</p>
-        <p>+1 252-937-3762</p>
+        <p>+504 32340392</p>
+        <a href="https://wa.me/98272321?text=Hola%20estoy interesado%20en%20hacer%20una%20consulta" target="_blank">+504 98273221</a>
       </div>
     </div>
     <div class="contact-info">
-      <BiMessageSquareDots />
+      <BiMessageSquareDots className="icon"/>
       <div class="info-box">
         <strong>E-mail</strong>
-        <p>sample@example.com</p>
+        <br/>
+        <a href="mailto:yvonne.facusse@gmail.com" target="_blank">yvonne.facusse@gmail.com</a>
       </div>
     </div>
     <div class="contact-info">
-      <SiGooglemaps />
+      <SiGooglemaps className="icon"/>
       <div class="info-box">
         <strong>Direccion</strong>
-        <p>5 Indian Spring Dr. Mundelein, IL 60060</p>
+        <p>Pendiente dirección fiscal en trámite </p>
       </div>
     </div>
   </div>
@@ -119,6 +120,11 @@ import { SiGooglemaps } from "react-icons/si";
       margin-left: 10px;
     }
 
+    .info-box > a{
+      text-decoration: none;
+      color: black;
+    }
+
     .contact-info{
       font-family: "Inter", sans-serif;
       display: flex;
@@ -126,5 +132,255 @@ import { SiGooglemaps } from "react-icons/si";
       justify-content: start;
       margin: 20px 0;
     }
+
+      /* media querys */
+  @media (max-width: 480px) {
+    .container{
+        height: auto;
+        max-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container >h2{
+        font-size: 2.3rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .form{
+        height: auto;
+        margin-bottom: 30px;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        
+    }
+
+    .form > label{
+      font-size: 0.9rem;
+      font-family: "Inter", sans-serif;
+    }
+
+    .form > input {
+      width: 50%;
+      height: 50px;
+      margin: 10px 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .form-container > a{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+
+    .info-container{
+      height: auto;
+      margin-top: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info-box{
+      width: 90vw;
+      text-align: center;
+    }
+
+    .icon{
+      display: none;
+    }
+
+    .contact-info{
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 20px 0;
+    }
+  }
+
+
+    /* Para dispositivos medianos (tabletas) */
+    @media (max-width: 768px) {
+      .container{
+        height: auto;
+        max-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container >h2{
+        font-size: 2.3rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .form{
+        height: auto;
+        margin-bottom: 30px;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        
+    }
+
+    .form > label{
+      font-size: 0.9rem;
+      font-family: "Inter", sans-serif;
+    }
+
+    .form > input {
+      width: 50%;
+      height: 50px;
+      margin: 10px 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .form-container > a{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+
+    .info-container{
+      height: auto;
+      margin-top: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info-box{
+      width: 90vw;
+      text-align: center;
+    }
+
+    .icon{
+      display: none;
+    }
+
+    .contact-info{
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 20px 0;
+    }
+    }
+
+      /* Para dispositivos grandes (escritorios pequeños) */
+  @media (max-width: 992px) {
+    .container{
+        height: auto;
+        max-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-container >h2{
+        font-size: 2.3rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .form{
+        height: auto;
+        margin-bottom: 30px;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        
+    }
+
+    .form > label{
+      font-size: 0.9rem;
+      font-family: "Inter", sans-serif;
+    }
+
+    .form > input {
+      width: 50%;
+      height: 50px;
+      margin: 10px 0;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .form-container > a{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+
+    .info-container{
+      height: auto;
+      margin-top: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info-box{
+      width: 90vw;
+      text-align: center;
+    }
+
+    .icon{
+      display: none;
+    }
+
+    .contact-info{
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 20px 0;
+    }
+  }
 
 </style>
