@@ -1,67 +1,188 @@
 ---
-import {Image} from 'astro:assets';
-import asesoria from '../../../images/asesorias.jpg'
+import { Image } from "astro:assets";
+import asesoria from "../../../images/asesorias.jpg";
 ---
 
-
 <div class="nosotrosContainer">
-    <div>
-        <Image class='image' src={asesoria} alt='lalal'/>
-    </div>
-    <div class="nosotrosText">
-        <h2>
-            Asesorias
-        </h2>
-        <p>As an official Webflow partner agency our team can help you take your online presence to the next level. No matter what stage your business is at, whether you're a start-up or an established brand we can help you position yourself and grow.</p>
-    </div>
-
+  <div>
+    <Image class="image" src={asesoria} alt="lalal" />
+  </div>
+  <div class="nosotrosText">
+    <h2>Asesorias</h2>
+    <p>
+      As an official Webflow partner agency our team can help you take your
+      online presence to the next level. No matter what stage your business is
+      at, whether you're a start-up or an established brand we can help you
+      position yourself and grow.
+    </p>
+  </div>
 </div>
 
-
-
 <style>
+  .nosotrosContainer {
+    margin: 100px 0;
+    max-width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .nosotrosContainer{
-        margin: 100px 0;
-        max-width: 100vw;
-        height: 60vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+  .image {
+    width: 700px;
+    height: 450px;
+    border-radius: 30px;
+  }
+
+  .nosotrosText {
+    margin-left: 50px;
+    width: 470px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .nosotrosText > h2 {
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+  }
+
+  .nosotrosText > p {
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  /* media querys */
+  @media (max-width: 480px) {
+    .nosotrosContainer {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
-
-    .image{
-        width: 700px;
-        height: 450px;
-        border-radius: 30px;
+    .image {
+      width: 360px !important;
+      height: auto !important;
     }
 
+    .nosotrosText {
+      margin: 0;
+      width: 100%;
+      height: auto;
 
-    .nosotrosText{
-        margin-left: 50px;
-        width: 470px;
-        height: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
-
-    .nosotrosText >h2{
-        font-size: 3rem;
-        margin: 0 0 40px 0;
+    .nosotrosText > h2 {
+      font-size: 3rem !important;
+      margin-top: 1.2rem;
     }
 
-    .nosotrosText > p{
-        text-align: justify;
-        font-size: 1.4rem;
-        line-height: 1.3;
+    .nosotrosText > p {
+      padding: 0 2rem !important;
+      text-align: justify;
+      font-size: 1.3rem !important;
+      line-height: 1.3;
     }
 
+    .nosotrosText > a {
+      font-size: 1rem ;
+      padding: 12px 20px;
+    }   
+  }
 
+/* Para dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+        .nosotrosContainer {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .image {
+      width: 320px;
+      height: 230px;
+    }
+
+    .nosotrosText {
+      margin: 0;
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nosotrosText > h2 {
+      font-size: 3rem;
+      margin-top: 3rem;
+    }
+
+    .nosotrosText > p {
+      padding: 0 4rem;
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      margin-bottom: 2rem;
+    }
+    }
+
+    /* Para dispositivos grandes (escritorios pequeños) */
+    @media (max-width: 992px) {
+        .nosotrosContainer {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image {
+      width: 400px;
+      height: 260px;
+    }
+
+    .nosotrosText {
+      margin: 0;
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nosotrosText > h2 {
+      font-size: 3.5rem;
+      margin-top: 2rem;
+    }
+
+    .nosotrosText > p {
+      padding: 0 8rem;
+      text-align: justify;
+      font-size: 1.3rem;
+      line-height: 1.3;
+      margin-bottom: 2rem;
+    }
+
+    .nosotrosText > a {
+      font-size: 1.2rem;
+      padding: 12px 20px;
+    }
+  }
 </style>

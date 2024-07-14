@@ -1,59 +1,208 @@
 <div class="seccion1">
-    <div class="titleC">
-        <h2 class="title1">Sobre nosotros</h2>
-    </div>
-    <div class="description">
-        <h3>With over 10+ years of global experience, we have worked with high-profile brands in various industries</h3>
-        <p>As an official Webflow partner agency our team can help you take your online presence to the next level. No matter what stage your business is at, whether you're a start-up or an established brand we can help you position yourself and grow.</p>
-    </div>
+  <div class="titleC">
+    <h2 class="title1">Sobre nosotros</h2>
+  </div>
+  <div class="description">
+    <h3>
+      With over 10+ years of global experience, we have worked with high-profile
+      brands in various industries
+    </h3>
+    <p>
+      As an official Webflow partner agency our team can help you take your
+      online presence to the next level. No matter what stage your business is
+      at, whether you're a start-up or an established brand we can help you
+      position yourself and grow.
+    </p>
+  </div>
 </div>
 
 <style>
-    .seccion1{
-        height: 60vh;
+  .seccion1 {
+    height: 60vh;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.7rem;
+    text-align: right;
+  }
+
+  .titleC {
+    width: auto;
+    height: 320px;
+    margin-right: 100px;
+    width: 80%;
+  }
+
+  .description {
+    width: auto;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .description > h3 {
+    margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    text-align: justify;
+    font-weight: 500;
+    width: 60%;
+  }
+
+  .description > p {
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    font-size: 1.1rem;
+    width: 60%;
+  }
+
+  /* media querys */
+  @media (max-width: 480px) {
+    .seccion1 {
+      height: auto;
+      max-width: 100vw;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
-    .title1{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2.7rem;
-        text-align: right;
+    .titleC {
+      margin: 0;
+      height: auto;
+      width: 100%;
     }
 
-    .titleC{
-        width: auto;
-        height: 320px;
-        margin-right: 100px;
-        width: 80%;
+    .title1 {
+      font-size: 3rem !important;
+      text-align: center;
     }
 
-    .description{
-        width: auto;
-        height: 300px;
+    .description {
+      width: auto;
+      height: auto;
+      padding: 0 2rem !important;
 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
     }
 
     .description > h3 {
-        margin-bottom: 0;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        text-align: justify;
-        font-weight: 500;
-        width: 60%;
+      font-size: 2rem !important;
+      text-align: justify;
+      width: 100%;
     }
 
     .description > p {
-        font-family: "Inter", sans-serif; 
-        text-align: justify;
-        font-size: 1.1rem;
-        width: 60%;
+      text-align: justify;
+      font-size: 1.1rem !important;
+      width: 100%;
     }
+  }
+
+  /* Para dispositivos medianos (tabletas) */
+  @media (max-width: 768px) {
+    .seccion1 {
+      height: auto;
+      max-width: 100vw;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .titleC {
+      margin: 0;
+      height: auto;
+      width: 100% !important;
+    }
+
+    .title1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .description {
+      width: auto;
+      height: auto;
+      padding: 0 0rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .description > h3 {
+      font-size: 2rem;
+      text-align: justify;
+      width: 100%;
+    }
+
+    .description > p {
+      text-align: justify;
+      font-size: 1.1rem;
+      width: 100%;
+    }
+  }
+
+  /* Para dispositivos grandes (escritorios pequeños) */
+  @media (max-width: 992px) {
+    .seccion1 {
+      height: auto;
+      max-width: 100vw;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .titleC {
+      margin: 0;
+      height: auto;
+      width: 100% !important;
+    }
+
+    .title1 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .description {
+      width: auto;
+      height: auto;
+      padding: 0 8rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .description > h3 {
+      font-size: 2.4rem;
+      text-align: justify;
+      width: 100%;
+    }
+
+    .description > p {
+      text-align: justify;
+      font-size: 1.2rem;
+      width: 100%;
+    }
+  }
 </style>

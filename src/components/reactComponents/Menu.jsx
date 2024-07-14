@@ -36,24 +36,24 @@ function SideMenu({ handleHide, show}) {
         <a className="link" href="/" onClick={handleHide}>
           Inicio
         </a>
-        <a className="link" href="/sproducts" onClick={handleHide}>
+        <a className="link" href="/venta" onClick={handleHide}>
           Venta
         </a>
-        <a className="link" href="/products" onClick={handleHide}>
+        <a className="link" href="/renta" onClick={handleHide}>
           Renta
         </a>
-        <a className="link" href="/wbest" onClick={handleHide}>
+        <a className="link" href="/preventa" onClick={handleHide}>
           Preventa
         </a>
-        <a className="link" href="/wbest" onClick={handleHide}>
+        <a className="link" href="/" onClick={handleHide}>
           Contacto
         </a>
       </ul>
       <div className="icons-container">
-        <a href="https://www.facebook.com/gymlandhn?locale=es_LA" target="_blank">
+        <a href="https://www.facebook.com/Firmabienesraices/" target="_blank">
           <FaFacebook className="icon" />
         </a>
-        <a href="https://www.instagram.com/gymlandhn/" target="_blank">
+        <a href="https://www.facebook.com/Firmabienesraices/" target="_blank">
           <FaInstagram className="icon" />
         </a>
       </div>
