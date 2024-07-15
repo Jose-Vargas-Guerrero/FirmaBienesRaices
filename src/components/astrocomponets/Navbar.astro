@@ -7,7 +7,7 @@ import Menu from '../reactComponents/Menu'
 <div class="navbar">
   <a class="logoImage" href="/"><Image class="logo" src={logo} alt="Logo" /></a>
   <ul>
-    <li class="item"><a>Nosotros</a></li>
+    <li class="item"><a href="/#nosotros">Nosotros</a></li>
     <li class="dropdown item">
       <a>Inmuebles</a>
       <div class="dropdown-content">
@@ -16,7 +16,7 @@ import Menu from '../reactComponents/Menu'
         <a href="/preventa">Preventa</a>
       </div>
     </li>
-    <li class="item"><a>Contacto</a></li>
+    <li class="item"><a href="/#formulario1">Contacto</a></li>
     <Menu client:load/>
   </ul>
 </div>
@@ -48,6 +48,8 @@ import Menu from '../reactComponents/Menu'
   .navbar a {
     font-size: 1.2rem;
     margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
     cursor: pointer;
   }
 
