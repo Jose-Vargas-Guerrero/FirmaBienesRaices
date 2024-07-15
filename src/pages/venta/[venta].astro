@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import inmuebles from '../../data/inmuebles';
 import View from '../../components/reactComponents/View';
-import Formulario2 from '../../components/astrocomponets/listaInmuebles/Formulario2.astro';
+import Formulario2 from '../../components/reactComponents/Formulario2';
 
 
 export async function getStaticPaths() {
@@ -39,12 +39,11 @@ const { p } = Astro.props
     image4={p.imagen4}
     image5={p.imagen5}
     />
-    <Formulario2/>
+    <Formulario2 client:load/>
 </div>
 </Layout>
 
 
 
 <style>
-
 </style>

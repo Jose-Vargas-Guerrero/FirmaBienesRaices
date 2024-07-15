@@ -49,7 +49,7 @@ function View({nombre,medidas,habitacion,estacionamiento,precio,
             <h2>{nombre}</h2>
             <p>{categoria}</p>
             <p>{habitacion} habitaciones {estacionamiento} estacionamiento {medidas}</p>
-            <a href='#'>Contactar</a>
+            <a href="https://wa.me/98272321?text=Hola%20estoy interesado%20en%20hacer%20una%20consulta" target="_blank">Contactar</a>
         </div>
         <div className='descripcion'>
             <h3>Descripcion</h3>
