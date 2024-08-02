@@ -51,10 +51,10 @@ function SideMenu({ handleHide, show}) {
       </ul>
       <div className="icons-container">
         <a href="https://www.facebook.com/Firmabienesraices" target="_blank">
-          <FaFacebook className="icon" />
+          <FaFacebook className="iconN" />
         </a>
         <a href="https://www.instagram.com/bienesraicesfirmahn/" target="_blank">
-          <FaInstagram className="icon" />
+          <FaInstagram className="iconN" />
         </a>
       </div>
       </div>

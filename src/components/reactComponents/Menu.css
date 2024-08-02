@@ -1,5 +1,5 @@
 /* menu animation */
-@keyframes fadeIn {
+@keyframes fadeIn1 {
     0% {
       right: -400px;
     }
@@ -18,7 +18,7 @@
     background-color: #03071e;
     padding: 15px 30px;
     font-size: 1.8rem;
-    animation: fadeIn 0.3s;
+    animation: fadeIn1 0.3s;
     z-index: 5;
   }
     
@@ -72,7 +72,7 @@
     align-items: center;
   }
   
-  .icon{
+  .iconN{
     margin-right: 15px;
     color: white;
   }
