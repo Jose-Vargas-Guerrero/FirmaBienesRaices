@@ -9,7 +9,6 @@
 }
 
 .view-container{
-
     margin: 0;
     padding: 6rem 0 0 0;
     max-width: 100vw;
@@ -19,11 +18,12 @@
 .image-container {
     width: 100%;
     max-width: 100vw;
-    height: 510px;
+    max-height: 510px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .image {

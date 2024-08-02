@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import inmuebles from "../../data/inmuebles";
+import preventa from "../../data/preventa";
 import BannerPreVenta from "../../components/astrocomponets/listaInmuebles/BannerPreVenta.astro";
 import Preview from "../../components/astrocomponets/listaInmuebles/Preview.astro";
 ---
@@ -10,19 +10,19 @@ import Preview from "../../components/astrocomponets/listaInmuebles/Preview.astr
     <BannerPreVenta categoria="Preventa" />
     <div class="body">
       {
-        inmuebles.map((e) => (
-          <Preview
-            categoria="renta"
-            enlace={e.url}
-            codigo={e.codigo}
-            nombre={e.nombre}
-            medidas={e.medidas}
-            habitaciones={e.habitaciones}
-            estacionamiento={e.estacionamiento}
-            precio={e.precio}
-            disponible={e.disponible}
-            imagen={e.imagen}
-          />
+        preventa.map((e) => (
+        <Preview
+        categoria="preventa"
+        enlace={e.url}
+        codigo={e.codigo}
+        nombre={e.nombre}
+        medidas={e.medidas}
+        caracteristica1={e.caracteristica1}
+        caracteristica2={e.caracteristica2}
+        precio={e.precio}
+        disponible={e.disponible}
+        imagen={e.imagen}
+      />
         ))
       }
     </div>

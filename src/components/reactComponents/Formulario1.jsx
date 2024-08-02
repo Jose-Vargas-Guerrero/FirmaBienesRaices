@@ -42,7 +42,7 @@ function Formulario1() {
           <div className="contact-info">
             <MdOutlinePhone className="icon" />
             <div className="info-box">
-              <strong>Telefono</strong>
+              <strong>Teléfono</strong>
               <p>+504 32340392</p>
               <a
                 href="https://wa.me/98272321?text=Hola%20estoy interesado%20en%20hacer%20una%20consulta"
@@ -65,7 +65,7 @@ function Formulario1() {
           <div className="contact-info">
             <SiGooglemaps className="icon" />
             <div className="info-box">
-              <strong>Direccion</strong>
+              <strong>Dirección</strong>
               <p>Pendiente dirección fiscal en trámite </p>
             </div>
           </div>

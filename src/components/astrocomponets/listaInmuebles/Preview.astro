@@ -5,8 +5,8 @@ const {
   codigo,
   nombre,
   medidas,
-  habitaciones,
-  estacionamiento,
+  caracteristica1,
+  caracteristica2,
   precio,
   disponible,
   imagen,
@@ -21,7 +21,7 @@ const {
   <div class="info">
     <h2>{nombre}</h2>
     <p>{medidas}</p>
-    <p>{habitaciones} habitaciones | {estacionamiento} estacionamiento</p>
+    <p>{caracteristica1} {caracteristica2}</p>
     <strong>{precio} HNL</strong>
   </div>
   <div class="disponible">
@@ -33,7 +33,7 @@ const {
   .preview {
     position: relative;
     width: 544px;
-    height: auto;
+    max-height: 366px;
     text-decoration: none;
     color: #000000;
   }
