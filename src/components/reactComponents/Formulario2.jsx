@@ -1,8 +1,7 @@
-import React from 'react'
 import { useState } from 'react'
 import '../reactComponents/formulario2.css'
 
-function Formulario2() {
+function Formulario2({inmueble, codigo}) {
     const [nombre, setNombre] = useState('')
     const [presupuesto, setPresupuesto] = useState()
     const [prima, setPrima] = useState('')
@@ -18,7 +17,7 @@ function Formulario2() {
 
     const options = ['Cuento con una prima del 10%', 'No cuento con una prima del 10%']
 
-    const message = `hola soy ${nombre}, tengo un presupuesto de ${presupuesto} y mi mensaje es: ${mensaje}. ${prima}`
+    const message = `hola soy ${nombre}, tengo un presupuesto de ${presupuesto} para ${inmueble} ${codigo}  y mi mensaje es: ${mensaje}. ${prima}`
 
     const encodedMessage = encodeURI(message);
     const whatsappLink = `https://web.whatsapp.com/send?phone=98272321&text=${encodedMessage}`;
