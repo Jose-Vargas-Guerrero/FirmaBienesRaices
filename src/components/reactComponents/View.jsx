@@ -61,7 +61,7 @@ function View({  nombre,  medidas,  caracteristica1,  caracteristica2,  precio, 
         </a>
       </div>
       <div className="descripcion">
-        <h3>Descripcion</h3>
+        <h3>Descripción</h3>
         <p>{descripcion}</p>
       </div>
       <div className="descripcion">
