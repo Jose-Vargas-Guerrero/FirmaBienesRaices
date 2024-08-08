@@ -9,7 +9,7 @@
 }
 
 .form-container{
-    height: 50%;
+    height: 70%;
     width: 50%;
 }
 
@@ -77,8 +77,15 @@
 
 .info-box > a{
   text-decoration: none;
-  color: black;
+  color: black; 
 }
+
+.space{
+  height: 10px;
+  width: 10px;
+}
+
+
 
 .contact-info{
   font-family: "Inter", sans-serif;

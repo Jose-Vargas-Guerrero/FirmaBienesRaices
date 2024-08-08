@@ -1,8 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import inmuebles from '../../data/inmuebles'
+import inmuebles from '../../data/preventa'
 import View from '../../components/reactComponents/View'
-import Formulario2 from '../../components/astrocomponets/listaInmuebles/Formulario2.astro'
+import Formulario2 from '../../components/reactComponents/Formulario2'
 
 export async function getStaticPaths () {
     const inmueble = inmuebles
@@ -26,8 +26,8 @@ const { p } = Astro.props
         <View client:load
         nombre={p.nombre}
         medidas={p.medidas}
-        habitacion={p.habitaciones}
-        estacionamiento={p.estacionamiento}
+        caracteristica1={p.caracteristica1}
+        caracteristica2={p.caracteristica2}
         precio={p.precio}
         categoria={p.categoria}
         descripcion={p.descripcion}
@@ -37,8 +37,13 @@ const { p } = Astro.props
         image3={p.imagen3}
         image4={p.imagen4}
         image5={p.imagen5}
+        image6={p.imagen6}
+        image7={p.imagen7}
+        image8={p.imagen8}
+        image9={p.imagen9}
+        image10={p.imagen10}
         />
-        <Formulario2/>
+        <Formulario2  inmueble={p.nombre} codigo={p.codigo} client:load/>
     </div>
 </Layout>
 

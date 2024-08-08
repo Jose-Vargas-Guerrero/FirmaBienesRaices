@@ -1,6 +1,6 @@
 ---
     import Layout from '../../layouts/Layout.astro'
-    import inmuebles from '../../data/inmuebles'
+    import renta from '../../data/renta'
     import BannerRenta from '../../components/astrocomponets/listaInmuebles/BannerRenta.astro'
     import Preview from '../../components/astrocomponets/listaInmuebles/Preview.astro'
 ---
@@ -11,15 +11,15 @@
         <BannerRenta categoria="Renta"/>
         <div class="body">
           {
-            inmuebles.map((e) => (
+            renta.map((e) => (
             <Preview
             categoria="renta"
             enlace={e.url}
             codigo={e.codigo}
             nombre={e.nombre}
             medidas={e.medidas}
-            habitaciones={e.habitaciones}
-            estacionamiento={e.estacionamiento}
+            caracteristica1={e.caracteristica1}
+            caracteristica2={e.caracteristica2}
             precio={e.precio}
             disponible={e.disponible}
             imagen={e.imagen}
