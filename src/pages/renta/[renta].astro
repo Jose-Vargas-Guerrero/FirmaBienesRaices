@@ -41,7 +41,7 @@ const { p } = Astro.props;
     image9={p.imagen9}
     image10={p.imagen10}
     />
-    <Formulario2 client:load/>
+    <Formulario2  inmueble={p.nombre} codigo={p.codigo} client:load/>
   </div>
 </Layout>
 

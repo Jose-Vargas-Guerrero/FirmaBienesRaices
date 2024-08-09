@@ -2,32 +2,13 @@
     import Layout from '../../layouts/Layout.astro'
     import renta from '../../data/renta'
     import BannerRenta from '../../components/astrocomponets/listaInmuebles/BannerRenta.astro'
-    import Preview from '../../components/astrocomponets/listaInmuebles/Preview.astro'
+    import PreviewRenta from '../../components/reactComponents/PreviewRenta'
 ---
 
 
 <Layout title='renta'>
-    <main>
         <BannerRenta categoria="Renta"/>
-        <div class="body">
-          {
-            renta.map((e) => (
-            <Preview
-            categoria="renta"
-            enlace={e.url}
-            codigo={e.codigo}
-            nombre={e.nombre}
-            medidas={e.medidas}
-            caracteristica1={e.caracteristica1}
-            caracteristica2={e.caracteristica2}
-            precio={e.precio}
-            disponible={e.disponible}
-            imagen={e.imagen}
-          />
-            ))
-          }
-        </div>
-    </main>
+        <PreviewRenta inmuebles={renta} client:load/>
 </Layout>
 
 
