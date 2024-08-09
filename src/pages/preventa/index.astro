@@ -2,31 +2,12 @@
 import Layout from "../../layouts/Layout.astro";
 import preventa from "../../data/preventa";
 import BannerPreVenta from "../../components/astrocomponets/listaInmuebles/BannerPreVenta.astro";
-import Preview from "../../components/astrocomponets/listaInmuebles/Preview.astro";
+import PreviewPreventa from "../../components/reactComponents/PreviewPreventa";
 ---
 
 <Layout title="pre-venta">
-  <main>
     <BannerPreVenta categoria="Preventa" />
-    <div class="body">
-      {
-        preventa.map((e) => (
-        <Preview
-        categoria="preventa"
-        enlace={e.url}
-        codigo={e.codigo}
-        nombre={e.nombre}
-        medidas={e.medidas}
-        caracteristica1={e.caracteristica1}
-        caracteristica2={e.caracteristica2}
-        precio={e.precio}
-        disponible={e.disponible}
-        imagen={e.imagen}
-      />
-        ))
-      }
-    </div>
-  </main>
+   <PreviewPreventa inmuebles={preventa} client:load/>
 </Layout>
 
 <style>

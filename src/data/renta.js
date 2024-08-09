@@ -9,7 +9,7 @@ const renta = [
         caracteristica2: '1 estacionamiento',
         precio: "1,200 USD",
         disponible: true,
-        categoria: "Apartamento",
+        categoria: "Apartamentos",
         descripcion: "Apartamento en Ecovivienda, piso 7, en renta. Amueblado, con 2 cuartos, 2 baños, área de lavandería, cocina completa, balcón, calentador, aire acondicionado y TV en cada cuarto. Incluye agua, mantenimiento y vigilancia.", 
         direccion: 'Ecovivienda, Tegucigalpa, Francisco Morazán',
         imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/apartamentoecovivienda/apartamentoEcovivienda%20(5).jpeg?raw=true',
@@ -26,13 +26,13 @@ const renta = [
     {
         codigo:"R002",
         url: 'Apartamento-en-TORRE-ASTRIA',
-        nombre: 'Apartamento en tORRE ASTRIA',
+        nombre: 'Apartamento en Torre Astria',
         medidas: '',
         caracteristica1: '5 habitaciones',
         caracteristica2: '1 estacionamiento',
         precio: "1,200 USD",
         disponible: true,
-        categoria: "Apartamento",
+        categoria: "Apartamentos",
         descripcion: "Apartamento en Torre Astria, Tegucigalpa, con 85 m², 2 habitaciones, 3 baños, sala, cocina con extractor, área de comedor y balcón con vista panorámica. Incluye acceso a áreas sociales como piscina, zona de BBQ, gimnasio, sala de reuniones y eventos, y seguridad 24/7. Precio: $1,300.", 
         direccion: 'Torre Astria, Tegucigalpa, Francisco Morazán',
         imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/torreAstria/astria1.jpg?raw=true',
@@ -68,7 +68,7 @@ const renta = [
         imagen8: '',
         imagen9: '',
         imagen10: '',
-    }, */
+    },
     /* {
         codigo:"R004",
         url: 'Apartamento-en-renta-eco',
