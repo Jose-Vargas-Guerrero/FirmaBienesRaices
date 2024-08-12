@@ -39,7 +39,7 @@ function Previews({inmuebles}) {
             <h2>{inmueble.nombre}</h2>
             <p>{inmueble.medidas}</p>
             <p>{inmueble.caracteristica1} {inmueble.caracteristica2}</p>
-            <strong>{inmueble.precio} HNL</strong>
+            <strong>{inmueble.precio}</strong>
           </div>
           <div className="disponible">
             {inmueble.disponible ? null : <p>No disponible</p>}
