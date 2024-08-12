@@ -27,7 +27,7 @@ function PreviewRenta({inmuebles}) {
         <button className="btn" onClick={() => handleFilter(categorias.Apartamentos)}>Apartamentos</button>
 {/*         <button className="btn" onClick={() => handleFilter(categorias.Terrenos)}>Terrenos</button> */}
 {/*         <button className="btn" onClick={() => handleFilter(categorias.Edificios)}>Edificios</button> */}
-{/*         <button className="btn" onClick={() => handleFilter(categorias.Locales)}>Locales comerciales</button> */}
+        <button className="btn" onClick={() => handleFilter(categorias.Locales)}>Locales comerciales</button>
       </div>
       <main className="main">
         {inmueblesFilter.map((inmueble) => (
@@ -40,7 +40,7 @@ function PreviewRenta({inmuebles}) {
             <h2>{inmueble.nombre}</h2>
             <p>{inmueble.medidas}</p>
             <p>{inmueble.caracteristica1} {inmueble.caracteristica2}</p>
-            <strong>{inmueble.precio} HNL</strong>
+            <strong>{inmueble.precio}</strong>
           </div>
           <div className="disponible">
             {inmueble.disponible ? null : <p>No disponible</p>}

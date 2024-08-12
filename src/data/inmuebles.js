@@ -68,7 +68,7 @@ const inmuebles = [
         imagen9: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/villa%20elena/casavillaelena%20(8).jpeg?raw=true',
         imagen10: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/villa%20elena/casavillaelena%20(9).jpeg?raw=true',
     },
-    /* {
+    {
         codigo:"F004",
         url: 'Terreno-Villa-Elena',
         nombre: 'Terreno en Residencial Villa Elena',
@@ -77,10 +77,10 @@ const inmuebles = [
         caracteristica2: 'Calle pavimentada',
         precio: "40 USD por V2",
         disponible: true,
-        categoria: "Terreno",
-        descripcion: 'Terreno de 4798.451 v² disponible en Residencial Villa Elena, completamente urbanizado, con servicios públicos, calle pavimentada y fácil acceso.', 
+        categoria: "Terrenos",
+        descripcion: 'Terreno de 4798.451 v²,urbanizado, con servicios públicos, calle pavimentada y fácil acceso.', 
         direccion: 'Villa Elena, Tegucigalpa, Francisco Morazán',
-        imagen: '',
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/vilaelena/villaElena.jpg?raw=true',
         imagen2: '',
         imagen3: '',
         imagen4: '',
@@ -90,20 +90,20 @@ const inmuebles = [
         imagen8: '',
         imagen9: '',
         imagen10: '',
-    }, */
-   /*  {
+    },
+    {
         codigo:"F005",
         url: 'Residencial-villa-entre-pinos-lote-y-construccion',
-        nombre: 'Residencial villa entre pinos lote y construccion',
+        nombre: 'Residencial villa entre pinos',
         medidas: '500 V2',
         caracteristica1: '',
         caracteristica2: '',
         precio: "950 HNL por V2",
         disponible: true,
-        categoria: "Terreno",
-        descripcion: 'Lotes disponibles desde 500 v² en Villa Entre Pinos, Tatumbla, rodeados de naturaleza. Precio por v² desde L950, con posibilidad de reservar con solo L25,000 y opción de construcción.', 
+        categoria: "Terrenos",
+        descripcion: 'Lotes disponibles desde 500 v², Precio por v² desde L950, con posibilidad de reservar con solo L25,000 y opción de construcción.', 
         direccion: 'Tatumbla,Francisco Morazán',
-        imagen: '',
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/tatumbla/tatumbla.jpg?raw=true',
         imagen2: '',
         imagen3: '',
         imagen4: '',
@@ -113,7 +113,7 @@ const inmuebles = [
         imagen8: '',
         imagen9: '',
         imagen10: '',
-    }, */
+    },
     {
         codigo:"F006",
         url: 'terreno-el-Hatillo',
@@ -160,7 +160,7 @@ const inmuebles = [
         imagen9: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/local%20artemisa/localArtemisa%20(8).jpg?raw=true',
         imagen10: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/local%20artemisa/localArtemisa%20(9).jpg?raw=true',
     },
-    /* {
+     {
         codigo:"F008",
         url: 'Terreno-Col-El-periodista',
         nombre: 'Terreno en Col. el Periodista',
@@ -169,20 +169,11 @@ const inmuebles = [
         caracteristica2: 'Fosa séptica',
         precio: "2,000,000 HNL",
         disponible: true,
-        categoria: "Terreno",
-        descripcion: "Terreno en Tegucigalpa, Colonia El Periodista, de 800 v². Cuenta con circuito cerrado, espectacular vista, electricidad, pegue de agua a 50 metros y fosa séptica.", 
+        categoria: "Terrenos",
+        descripcion: "800 v², circuito cerrado, electricidad, pegue de agua a 50 metros y fosa séptica.", 
         direccion: 'Colonia El Periodista, San Pedro Sula, Cortés',
-        imagen: '',
-        imagen2: '',
-        imagen3: '',
-        imagen4: '',
-        imagen5: '',
-        imagen6: '',
-        imagen7: '',
-        imagen8: '',
-        imagen9: '',
-        imagen10: '',
-    }, */
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/periodista/periodista.jpg?raw=true',
+    },
     {
         codigo:"F009",
         url: 'Casa-en-Villas-del-Real',
@@ -248,7 +239,7 @@ const inmuebles = [
         imagen5: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/terrenoMolino/terrenoMolino%20(5).jpg?raw=true',
         imagen6: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/terrenoMolino/terrenoMolino%20(6).jpg?raw=true',
     },
-   /*  {
+    {
         codigo:"F012",
         url: 'Terreno-en-residencial-Zarahemla',
         nombre: 'Terreno en Residencial Zarahemla',
@@ -257,10 +248,10 @@ const inmuebles = [
         caracteristica2: 'Agua',
         precio: "7,500 HNL V2",
         disponible: true,
-        categoria: "Terreno",
-        descripcion: "Terreno disponible en Residencial Zarahemla, cerca de la zona fresca de Tegucigalpa y del anillo periférico. Incluye calles pavimentadas, electricidad, agua, seguridad 24/7 y acceso a crédito bancario. Precio: L7,500 por v².", 
+        categoria: "Terrenos",
+        descripcion: "Cerca de la zona fresca de Tegucigalpa y del anillo periférico, calles pavimentadas, electricidad, agua, seguridad 24/7 y acceso a crédito bancario.", 
         direccion: 'Residencial Zarahemla, Tegucigalpa, Francisco Morazán',
-        imagen: '',
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/zarahemla/res.zarahemla.jpg?raw=true',
         imagen2: '',
         imagen3: '',
         imagen4: '',
@@ -270,7 +261,7 @@ const inmuebles = [
         imagen8: '',
         imagen9: '',
         imagen10: '',
-    }, */
+    },
     {
         codigo:"F013",
         url: 'Vivienda-En-Residencial-Villa-Foresta',
@@ -357,19 +348,19 @@ const inmuebles = [
         imagen9: '',
         imagen10: '',
     }, */
-  /*   {
+    {
         codigo:"F017",
         url: 'Penthouse-en-Torre-Platinum',
         nombre: 'Penthouse en Torre Platinum',
         medidas: '',
-        caracteristica1: '',
-        caracteristica2: '',
+        caracteristica1: '4 habitaciones',
+        caracteristica2: '4 estacionamiento',
         precio: "900,000 USD",
         disponible: true,
-        categoria: 'Penthouse',
-        descripcion: 'Penthouse en Torre Platinum, una opción de lujo en un edificio moderno y elegante, ideal para quienes buscan un estilo de vida exclusivo y cómodo.', 
+        categoria: 'Viviendas',
+        descripcion: '4 habitaciones, 4 baños, salas, comedor, cocina, alacena', 
         direccion: 'Torre Platinum, Colonia Tepeyac, Tegucigalpa, Francisco Morazán',
-        imagen: '',
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/platinum/platinum.jpg?raw=true',
         imagen2: '',
         imagen3: '',
         imagen4: '',
@@ -379,7 +370,7 @@ const inmuebles = [
         imagen8: '',
         imagen9: '',
         imagen10: '',
-    }, */
+    },
     {
         /* cambiar las imagenes lolololololo */
         codigo:"F018",
