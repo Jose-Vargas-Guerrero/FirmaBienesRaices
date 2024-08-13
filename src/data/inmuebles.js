@@ -371,8 +371,8 @@ const inmuebles = [
         imagen9: '',
         imagen10: '',
     },
-    {
-        /* cambiar las imagenes lolololololo */
+    /* {
+       
         codigo:"F018",
         url: 'Penthouse-en-Torre-Tiffanys',
         nombre: 'Penthouse en Torre Tiffanys',
@@ -394,7 +394,7 @@ const inmuebles = [
         imagen8: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(8).jpg?raw=true',
         imagen9: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(9).jpg?raw=true',
         imagen10: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(1).jpg?raw=true',
-    },
+    }, */
 ]
 
 
