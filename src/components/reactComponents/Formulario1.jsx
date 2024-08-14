@@ -10,9 +10,11 @@ function Formulario1() {
   const [mensaje, setMensaje] = useState("");
   const [correo, setCorreo] = useState("")
   const [presupuesto, setPresupuesto] = useState("")
-  const message = `hola soy ${Nombre} ${correo} y mi presupuesto es: ${presupuesto}, ${mensaje}`;
-  const encodedMessage = encodeURI(message);
-  const whatsappLink = `https://web.whatsapp.com/send?phone=98272321&text=${encodedMessage}`;
+  const message = `hola soy ${Nombre} mi correo es: ${correo} y mi presupuesto es de: ${presupuesto}, ${mensaje}`;
+  const encodedMessage = encodeURIComponent(message);
+  /* const whatsappLink = `https://web.whatsapp.com/send?phone=98272321&text=${encodedMessage}`; */
+  const whatsappLink = `whatsapp://send?phone=98272321&text=${encodedMessage}`;
+
 
   const handleNombreInput = (e) => {
     setNombre(e.target.value);

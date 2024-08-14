@@ -5,7 +5,7 @@ const preventa = [
         url: 'Vivienda-Residencial-Oslo',
         nombre: 'Vivienda Residencial Oslo',
         medidas: '72 M2',
-        caracteristica1: '4 habitaciones',
+        caracteristica1: '2 habitaciones',
         caracteristica2: '1 parqueo',
         precio: "2,550,000 HNL",
         disponible: true,
