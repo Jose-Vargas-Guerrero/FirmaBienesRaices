@@ -19,8 +19,10 @@ function Formulario2({inmueble, codigo}) {
 
     const message = `hola soy ${nombre}, tengo un presupuesto de ${presupuesto} para ${inmueble} ${codigo}  y mi mensaje es: ${mensaje}. ${prima}`
 
-    const encodedMessage = encodeURI(message);
-    const whatsappLink = `https://web.whatsapp.com/send?phone=98272321&text=${encodedMessage}`;
+/*     const encodedMessage = encodeURI(message);
+    const whatsappLink = `https://web.whatsapp.com/send?phone=98272321&text=${encodedMessage}`; */
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappLink = `whatsapp://send?phone=98272321&text=${encodedMessage}`;
 
   return (
     <div className="container">

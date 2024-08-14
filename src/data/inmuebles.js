@@ -371,7 +371,7 @@ const inmuebles = [
         imagen9: '',
         imagen10: '',
     },
-    /* {
+    { 
        
         codigo:"F018",
         url: 'Penthouse-en-Torre-Tiffanys',
@@ -384,8 +384,8 @@ const inmuebles = [
         categoria: 'Apartamentos',
         descripcion: 'Penthouse en Torre Tiffanys, una opción de lujo en un edificio moderno y elegante, ideal para quienes buscan un estilo de vida exclusivo y cómodo.', 
         direccion: 'Torre Tiffanys, Lomas del Guijarro, Tegucigalpa, Francisco Morazán',
-        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(10).jpg?raw=true',
-        imagen2: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(2).jpg?raw=true',
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(2).jpg?raw=true',
+        imagen2: '',
         imagen3: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(3).jpg?raw=true',
         imagen4: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(4).jpg?raw=true',
         imagen5: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(5).jpg?raw=true',
@@ -393,8 +393,8 @@ const inmuebles = [
         imagen7: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(7).jpg?raw=true',
         imagen8: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(8).jpg?raw=true',
         imagen9: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(9).jpg?raw=true',
-        imagen10: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/penthouseTifanny/apartamentoTifanny%20(1).jpg?raw=true',
-    }, */
+        imagen10: '',
+    }
 ]
 
 
