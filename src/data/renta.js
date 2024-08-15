@@ -78,7 +78,7 @@ const renta = [
         precio: "15,000 HNL",
         disponible: true,
         categoria: "Locales",
-        descripcion: " Con un espacio adecuado para consultas y procedimientos médicos,aire acondicionado.", 
+        descripcion: " Con un espacio adecuado para consultas y procedimientos médicos, aire acondicionado.", 
         direccion: 'Artemisa, San Pedro Sula, Cortés',
         imagen: 'https://images.pexels.com/photos/2030037/pexels-photo-2030037.jpeg?auto=compress&cs=tinysrgb&w=600',
         imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/ESPACIO%20TORRE%20ARTEMISA/clinica%20(2).jpg?raw=true',
