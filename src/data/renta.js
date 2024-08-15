@@ -104,7 +104,7 @@ const renta = [
         categoria: "Apartamento",
         descripcion: "2 habitaciones, 2 baños, sala, comedor, cocina, balcón.", 
         direccion: 'Ecovivienda, Tegucigalpa, Francisco Morazán',
-        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/ecoPiso%237/apartamentoEco.jpg?raw=true',
+        imagen: 'https://raw.githubusercontent.com/Jose-Vargas-Guerrero/firmaImagenes/main/images/apartamentoecovivienda/apartamentoEcovivienda%20(1).jpeg',
         imagen2: '',
         imagen3: '',
         imagen4: '',
