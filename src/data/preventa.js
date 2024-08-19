@@ -26,7 +26,7 @@ const preventa = [
         disponible: true,
         categoria: 'Viviendas',
         descripcion: "Cuenta 3 habitaciones, 3 baños, 2 estacionamientos, 2 salas, comedor, cocina con mueble, lavandería, cisterna, 1 estudio, área social y terraza, construcción 225 M2.", 
-        direccion: 'Villa Napoleones, Residencial El Sauce, Tegucigalpa, Francisco Morazán',
+        direccion: 'Villa Los Napoleones, El Sauce, Tegucigalpa, Francisco Morazán',
         imagen: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/VILLA%20LOS%20NAPOLEONES/napoles%20(1).jpg?raw=true',
         imagen2: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/VILLA%20LOS%20NAPOLEONES/napoles%20(2).jpg?raw=true',
         imagen3: 'https://github.com/Jose-Vargas-Guerrero/firmaImagenes/blob/main/images/VILLA%20LOS%20NAPOLEONES/napoles%20(3).jpg?raw=true',
