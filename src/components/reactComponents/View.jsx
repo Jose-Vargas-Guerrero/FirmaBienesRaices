@@ -6,6 +6,9 @@ function View({  nombre,  medidas,  caracteristica1,  caracteristica2,  precio, 
   {
   const [image, setImage] = useState(image1);
   const [animate, setAnimate] = useState(true);
+  const message = `Hola tengo una consulta sobre: ${nombre}`
+  const encodedMessage = encodeURIComponent(message)
+  const whatsappLink = `whatsapp://send?phone=98272321&text=${encodedMessage}`;
   const images = [
     image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,
   ];
@@ -54,7 +57,7 @@ function View({  nombre,  medidas,  caracteristica1,  caracteristica2,  precio, 
           {caracteristica1} {caracteristica2} {medidas}
         </p>
         <a
-          href="https://wa.me/98272321?text=Hola%20estoy interesado%20en%20hacer%20una%20consulta"
+          href={whatsappLink}
           target="_blank"
         >
           Contactar
