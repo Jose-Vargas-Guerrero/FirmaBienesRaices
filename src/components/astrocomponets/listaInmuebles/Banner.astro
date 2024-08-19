@@ -21,7 +21,7 @@ const { categoria } = Astro.props;
 
   .banner {
     height: 250px;
-    width: 100vw;
+    max-width: 100%;
     background-image: url("../../../images/bannerVentas.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ const { categoria } = Astro.props;
     align-items: center;
   }
 
-  /* media querys */
+  
   @media (max-width: 480px) {
     .banner {
       height: 250px;
@@ -114,11 +114,12 @@ const { categoria } = Astro.props;
     .box {
       height: auto;
       padding-bottom: 1rem;
+      width: 100%;
     }
   }
 
-  /* Para dispositivos medianos (tabletas) */
-  @media (max-width: 768px) {
+
+   @media (max-width: 768px) {
     .banner {
       height: 250px;
       width: 100vw;
@@ -164,5 +165,5 @@ const { categoria } = Astro.props;
       height: auto;
       padding-bottom: 1rem;
     }
-  }
+  } 
 </style>
