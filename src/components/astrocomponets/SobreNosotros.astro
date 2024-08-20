@@ -3,7 +3,7 @@ import Nosotros from './sobreNosotrosComponents/Nosotros.astro'
 import Confiabilidad from './sobreNosotrosComponents/Confiabilidad.astro'
 import Estrategias from '../astrocomponets/sobreNosotrosComponents/Estrategias.astro'
 import Asesorias from '../astrocomponets/sobreNosotrosComponents/Asesorias.astro'
-import Formulario from './Formulario.astro'
+import Formulario1 from '../reactComponents/Formulario1'
 ---
 
 <div class="container">
@@ -11,7 +11,7 @@ import Formulario from './Formulario.astro'
     <Confiabilidad/>
     <Estrategias/>
     <Asesorias/>
-    <Formulario/>
+    <Formulario1 client:load/>
 </div>
 
 
@@ -23,6 +23,11 @@ import Formulario from './Formulario.astro'
         padding-top: 100px;
         height: auto !important;
         max-width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     

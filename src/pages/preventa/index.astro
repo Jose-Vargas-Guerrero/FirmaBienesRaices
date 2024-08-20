@@ -1,32 +1,13 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import inmuebles from "../../data/inmuebles";
+import preventa from "../../data/preventa";
 import BannerPreVenta from "../../components/astrocomponets/listaInmuebles/BannerPreVenta.astro";
-import Preview from "../../components/astrocomponets/listaInmuebles/Preview.astro";
+import PreviewPreventa from "../../components/reactComponents/PreviewPreventa";
 ---
 
 <Layout title="pre-venta">
-  <main>
-    <BannerPreVenta categoria="Renta" />
-    <div class="body">
-      {
-        inmuebles.map((e) => (
-          <Preview
-            categoria="renta"
-            enlace={e.url}
-            codigo={e.codigo}
-            nombre={e.nombre}
-            medidas={e.medidas}
-            habitaciones={e.habitaciones}
-            estacionamiento={e.estacionamiento}
-            precio={e.precio}
-            disponible={e.disponible}
-            imagen={e.imagen}
-          />
-        ))
-      }
-    </div>
-  </main>
+    <BannerPreVenta categoria="Preventa" />
+    <PreviewPreventa inmuebles={preventa} client:load/>
 </Layout>
 
 <style>
@@ -45,4 +26,30 @@ import Preview from "../../components/astrocomponets/listaInmuebles/Preview.astr
     gap: 20px;
     padding: 20px;
   }
+
+  /* media querys */
+  @media (max-width: 480px) {
+    .body {
+      max-width: 100vw;
+      height: auto;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+
+  /* Para dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+  .body {
+      max-width: 100vw;
+      height: auto;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+}
 </style>

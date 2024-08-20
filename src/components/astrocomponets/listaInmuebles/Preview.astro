@@ -1,100 +1,322 @@
 ---
-
-const { categoria,enlace,codigo,nombre,medidas,habitaciones,estacionamiento,precio,disponible,imagen} = Astro.props
-
+const {
+  categoria,
+  enlace,
+  codigo,
+  nombre,
+  medidas,
+  caracteristica1,
+  caracteristica2,
+  precio,
+  disponible,
+  imagen,
+} = Astro.props;
 ---
-    <a href={`/${categoria}/${enlace}`} class="preview">
-        <div class="codigo">
-            <p>{codigo}</p>
-        </div>
-        <img src={imagen} alt='preview'/>
-        <div class="info">
-            <h2>{nombre}</h2>
-            <p>{medidas}</p>
-            <p>{habitaciones} habitaciones | {estacionamiento} estacionamiento</p>
-            <strong>{precio} HNL</strong>
-        </div>
-        <div class="disponible">
-            { disponible ? null : <p>No disponible</p>}
-        </div>
-    </a>
 
+<a href={`/${categoria}/${enlace}`} class="preview">
+  <div class="codigo">
+    <p>{codigo}</p>
+  </div>
+  <img src={imagen} alt="preview" />
+  <div class="info">
+    <h2>{nombre}</h2>
+    <p>{medidas}</p>
+    <p>{caracteristica1} {caracteristica2}</p>
+    <strong>{precio} HNL</strong>
+  </div>
+  <div class="disponible">
+    {disponible ? null : <p>No disponible</p>}
+  </div>
+</a>
 
 <style>
-    
-    .preview{
-        position: relative;
-        width: 544px;
-        height: auto;
-        text-decoration: none;
-        color: #000000;
+  .preview {
+    position: relative;
+    width: 544px;
+    max-height: 366px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .preview > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .info {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info > h2,
+  p,
+  strong {
+    margin: 4px 10px;
+  }
+
+  .info > h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .info > p {
+    font-size: 1rem;
+  }
+
+  .info > strong {
+    font-size: 1.2rem;
+  }
+
+  .disponible {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0 10px;
+  }
+
+  .disponible > p {
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  .codigo {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0 10px;
+  }
+
+  .disponible > p {
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  /* media querys */
+  @media (max-width: 480px) {
+    .preview {
+      position: relative;
+      width: 300px;
+      height: auto;
+      text-decoration: none;
+      color: #000000;
     }
 
     .preview > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
     }
 
-    .info{
-        width: 70%;
-        height: auto;
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.9); 
-        padding: 0 0.5rem;
+    .info {
+      width: 60%;
+      height: auto;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0 0.5rem;
 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .info > h2 ,p,strong {
-        margin: 4px 10px;
-        
+    .info > h2,p,strong {
+      margin: 4px 4px;
     }
-
 
     .info > h2 {
-        font-size: 1.4rem;
-        font-weight: bold;
+      font-size: 1rem;
+      font-weight: bold;
     }
 
     .info > p {
-        font-size: 1rem;
+      font-size: 0.5rem;
     }
 
     .info > strong {
-        font-size: 1.2rem;
+      font-size: 0.5rem;
     }
 
-    .disponible{
-        background-color: rgba(255, 255, 255, 0.9);
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        padding: 0 10px;
-    }
-
-    .disponible > p {
-        font-weight: 400;
-        font-size: 1.1rem;
-    }
-
-    .codigo{
-        background-color: rgba(255, 255, 255, 0.9);
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 0 10px;
+    .disponible {
+      top: 20px;
+      right: 20px;
+      padding: 0 10px;
     }
 
     .disponible > p {
-        font-weight: 400;
-        font-size: 1.1rem;
+      font-weight: 400;
+      font-size: 0.7rem !important;
     }
 
+    .codigo {
+      top: 20px;
+      left: 20px;
+      padding: 0 10px;
+    }
 
+    .disponible > p {
+      font-weight: 400;
+      font-size: 0.9rem !important;
+
+    }
+  }
+
+  /* Para dispositivos medianos (tabletas) */
+  @media (max-width: 768px) {
+    .preview {
+      position: relative;
+      width: 300px;
+      height: auto;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .preview > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+    }
+
+    .info {
+      width: 60%;
+      height: auto;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0 0.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .info > h2,p,strong {
+      margin: 4px 4px;
+    }
+
+    .info > h2 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .info > p {
+      font-size: 0.6rem;
+    }
+
+    .info > strong {
+      font-size: 0.6rem !important;
+    }
+
+    .disponible {
+      top: 20px;
+      right: 20px;
+      padding: 0 10px;
+    }
+
+    .disponible > p {
+      font-weight: 400;
+      font-size: 0.7rem !important;
+    }
+
+    .codigo {
+      top: 20px;
+      left: 20px;
+      padding: 0 10px;
+    }
+
+    .disponible > p {
+      font-weight: 400;
+      font-size: 0.9rem !important;
+
+    }
+  }
+
+  /* Para dispositivos grandes (escritorios pequeños) */
+  @media (max-width: 992px) {
+    .preview {
+      position: relative;
+      width: 300px;
+      height: auto;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .preview > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+    }
+
+    .info {
+      width: 60%;
+      height: auto;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 0 0.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .info > h2,p,strong {
+      margin: 4px 4px;
+    }
+
+    .info > h2 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .info > p {
+      font-size: 0.6rem;
+    }
+
+    .info > strong {
+      font-size: 0.6rem;
+    }
+
+    .disponible {
+      top: 20px;
+      right: 20px;
+      padding: 0 10px;
+    }
+
+    .disponible > p {
+      font-weight: 400;
+      font-size: 6rem !important;
+    }
+
+    .codigo {
+      top: 20px;
+      left: 20px;
+      padding: 0 10px;
+    }
+
+    .disponible > p {
+      font-weight: 400;
+      font-size: 0.9rem !important;
+
+    }
+  }
 </style>

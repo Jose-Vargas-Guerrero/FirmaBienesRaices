@@ -1,33 +1,14 @@
 ---
     import Layout from '../../layouts/Layout.astro'
-    import inmuebles from '../../data/inmuebles'
+    import renta from '../../data/renta'
     import BannerRenta from '../../components/astrocomponets/listaInmuebles/BannerRenta.astro'
-    import Preview from '../../components/astrocomponets/listaInmuebles/Preview.astro'
+    import PreviewRenta from '../../components/reactComponents/PreviewRenta'
 ---
 
 
 <Layout title='renta'>
-    <main>
         <BannerRenta categoria="Renta"/>
-        <div class="body">
-          {
-            inmuebles.map((e) => (
-            <Preview
-            categoria="renta"
-            enlace={e.url}
-            codigo={e.codigo}
-            nombre={e.nombre}
-            medidas={e.medidas}
-            habitaciones={e.habitaciones}
-            estacionamiento={e.estacionamiento}
-            precio={e.precio}
-            disponible={e.disponible}
-            imagen={e.imagen}
-          />
-            ))
-          }
-        </div>
-    </main>
+        <PreviewRenta inmuebles={renta} client:load/>
 </Layout>
 
 
@@ -48,6 +29,32 @@
     gap: 20px;
     padding: 20px;
   }
+
+  /* media querys */
+  @media (max-width: 480px) {
+    .body {
+      max-width: 100vw;
+      height: auto;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+
+  /* Para dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+  .body {
+      max-width: 100vw;
+      height: auto;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+}
 </style>
 
 

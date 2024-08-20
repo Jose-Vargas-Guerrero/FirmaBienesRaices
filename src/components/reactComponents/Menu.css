@@ -1,5 +1,5 @@
 /* menu animation */
-@keyframes fadeIn {
+@keyframes fadeIn1 {
     0% {
       right: -400px;
     }
@@ -18,7 +18,7 @@
     background-color: #03071e;
     padding: 15px 30px;
     font-size: 1.8rem;
-    animation: fadeIn 0.3s;
+    animation: fadeIn1 0.3s;
     z-index: 5;
   }
     
@@ -36,7 +36,7 @@
 
 
   .companyName{ 
-    margin-left: 2.5rem; 
+    margin-left: 4.5rem; 
     font-size: 1.2rem;
     width: auto;
   }
@@ -57,6 +57,7 @@
   
   .links-container {
     margin-top: 3rem;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -64,14 +65,14 @@
   
   .icons-container {
     margin-top: 3rem;
-    margin-left: 2.5rem;
+    margin-left: 4.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
   
-  .icon{
+  .iconN{
     margin-right: 15px;
     color: white;
   }
