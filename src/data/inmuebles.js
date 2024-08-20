@@ -203,7 +203,7 @@ const inmuebles = [
         nombre: 'Vivienda Col. Tepeyac',
         medidas: '546.54 M2',
         caracteristica1: '4 habitaciones',
-        caracteristica2: '1 estacionamiento',
+        caracteristica2: '4 estacionamiento',
         precio: "11,000,000 HNL",
         disponible: true,
         categoria: "Viviendas",
