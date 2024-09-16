@@ -145,7 +145,7 @@ const renta = [
         medidas: '',
         caracteristica1: 'Locales amplios',
         caracteristica2: '30 estacionamientos',
-        precio: "545 USD",
+        precio: "Desde 13000.00 HNL",
         disponible: true,
         categoria: "Locales",
         descripcion: "Locales amplios,mantenimiento y limpieza de áreas comunes,seguridad 24/7, el acarreo de desperdicios,30 estacionamientos, planta eléctrica, mantenimiento GRATIS el primer año", 
