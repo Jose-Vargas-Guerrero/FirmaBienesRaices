@@ -592,7 +592,7 @@ const inmuebles = [
         medidas: '6,628 V2',
         caracteristica1: '',
         caracteristica2: '',
-        precio: "90,000 HNL",
+        precio: "90,000 USD",
         disponible: true,
         categoria: 'Terrenos',
         descripcion: 'Terreno en venta a la orilla de la carretera, terreno plano primera parte e inclinado segunda parte.', 
