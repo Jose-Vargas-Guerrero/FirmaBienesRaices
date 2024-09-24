@@ -32,7 +32,7 @@ function View({  nombre,  medidas,  caracteristica1,  caracteristica2,  precio, 
       <div className="image-container">
         <img
           src={image}
-          alt="lala"
+          alt={nombre}
           className={`image ${animate ? "fade-in" : ""}`}
         />
       </div>
