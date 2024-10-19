@@ -23,8 +23,8 @@ function PreviewPreventa({inmuebles}) {
       <div className="options">
         <button className="btn" onClick={() => handleFilter(categorias.all)}>Todo</button>
         <button className="btn" onClick={() => handleFilter(categorias.Viviendas)}>Viviendas</button>
-{/*         <button className="btn" onClick={() => handleFilter(categorias.Apartamentos)}>Apartamentos</button>
-        <button className="btn" onClick={() => handleFilter(categorias.Terrenos)}>Terrenos</button> */}
+         <button className="btn" onClick={() => handleFilter(categorias.Apartamentos)}>Apartamentos</button>
+{/*        <button className="btn" onClick={() => handleFilter(categorias.Terrenos)}>Terrenos</button> */}
 {/*         <button className="btn" onClick={() => handleFilter(categorias.Edificios)}>Edificios</button> */}
 {/*         <button className="btn" onClick={() => handleFilter(categorias.Locales)}>Locales comerciales</button> */}
       </div>
