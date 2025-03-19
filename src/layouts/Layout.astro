@@ -1,45 +1,58 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 
-import Navbar from '../components/astrocomponets/Navbar.astro';
-import MetaPixel from '../components/metapixel/MetaPixel.astro';
+import Navbar from "../components/astrocomponets/Navbar.astro";
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<MetaPixel/>
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image" href="/public/logo.png" />
-		<meta name="generator" content={Astro.generator} />
-		<!-- merriweather font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<!-- inter font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar/>
-		<slot />
-	</body>
+  <head>
+    <script src="/metapixel.js" defer></script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=7640161349407224&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image" href="/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- merriweather font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html{
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-	body{
-		margin: 0 !important;
-		padding: 0 !important;
-	}
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 </style>
