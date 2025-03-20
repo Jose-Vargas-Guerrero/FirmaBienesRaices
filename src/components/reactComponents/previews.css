@@ -10,6 +10,8 @@
     flex-wrap: wrap;
 }
 
+
+
 .btn{
     margin: 10px;
     background-color: none;
@@ -102,7 +104,7 @@
   }
 
   .disponible {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #c1121f;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -112,6 +114,7 @@
   .disponible > p {
     font-weight: 400;
     font-size: 1.1rem;
+    color: white;
   }
 
   .codigo {
@@ -122,10 +125,7 @@
     padding: 0 10px;
   }
 
-  .disponible > p {
-    font-weight: 400;
-    font-size: 1.1rem;
-  }
+
 
   /* media querys */
   @media (max-width: 480px) {
