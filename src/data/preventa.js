@@ -202,6 +202,30 @@ const preventa = [
         imagen9: '',
         imagen10: '',
     },
+    { 
+       
+        codigo:"P010",
+        url: 'VIVIENDA-EN-RESIDENCIAL-LAS-UVAS',
+        nombre: 'VIVIENDA EN RESIDENCIAL LAS UVAS',
+        medidas: '421.15 V2',
+        caracteristica1: '4 Habitaciones',
+        caracteristica2: '3 Estacionamiento',
+        precio: " 9,200,000 HNL",
+        disponible: true,
+        categoria: 'Viviendas',
+        descripcion: 'Amplia vivienda con 4 habitaciones, 2 salas, estudio, cocina con alacena y 2 áreas de lavandería. Cuenta con bodega, gran jardín, balcón, 3 estacionamientos y circuito cerrado.', 
+        direccion: 'Residencial Las Uvas, Tegucigalpa',
+        imagen: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-43(1).jpg?raw=true',
+        imagen2: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-43(2).jpg?raw=true',
+        imagen3: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-43.jpg?raw=true',
+        imagen4: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-44(1).jpg?raw=true',
+        imagen5: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-44(2).jpg?raw=true',
+        imagen6: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-44.jpg?raw=true',
+        imagen7: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-45(1).jpg?raw=true',
+        imagen8: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-45(3).jpg?raw=true',    
+        imagen9: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-45.jpg?raw=true',
+        imagen10: 'https://github.com/Jose-Vargas-Guerrero/firmabienesraicesImages/blob/main/Casa%20preventa%20las%20uvas/PHOTO-2025-03-07-18-16-46(2).jpg?raw=true',
+    },
 ]
 
 
